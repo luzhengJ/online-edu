@@ -20,17 +20,23 @@
             "style" :                                                                                    
             {
                 "enablePullDownRefresh": false,
-				"navigationBarTitleText": "我的"
+				"navigationBarTitleText": "我的",
+				"navigationBarBackgroundColor":"#5ccc84",
+				"navigationBarTextStyle":"white",
+				"app-plus": {
+					"titleNView": {
+						"titleAlign": "left",
+						"buttons": [
+							{
+								"type": "menu"
+							}
+						]
+					}
+				}
             }
             
         }
     ],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	},
 	"tabBar": {
 		"color": "#c3c2ca",
 		"selectedColor": "#2c2c2c",
@@ -55,6 +61,12 @@
 				"selectedIconPath": "static/tabbar/home_selected.png"
 			}
 		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
 	},
 	"uniIdRouter": {}
 }
