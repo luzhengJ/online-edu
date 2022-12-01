@@ -1,0 +1,60 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "在线教育"
+			}
+		}
+	    ,{
+            "path" : "pages/students/students",
+            "style" :                                                                                    
+            {
+                "enablePullDownRefresh": false,
+				"navigationBarTitleText": "学习"
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/my",
+            "style" :                                                                                    
+            {
+                "enablePullDownRefresh": false,
+				"navigationBarTitleText": "我的"
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#c3c2ca",
+		"selectedColor": "#2c2c2c",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/tabbar/index1.png",
+				"selectedIconPath": "static/tabbar/index1_selected.png"
+			},
+			{
+				"pagePath": "pages/students/students",
+				"text": "学习",
+				"iconPath":"static/tabbar/learn.png" ,
+				"selectedIconPath": "static/tabbar/learn_selected.png"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的",
+				"iconPath": "static/tabbar/home.png",
+				"selectedIconPath": "static/tabbar/home_selected.png"
+			}
+		]
+	},
+	"uniIdRouter": {}
+}
